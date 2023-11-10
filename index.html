@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .navbar {
+            background-color: black;
+            padding: 1em;
+            overflow: hidden;
+            margin-bottom: 10px;
+            padding: 30px 65px ;
+        }
+
+        .navbar .logo {
+            color: red;
+            font-size: 2em;
+            float: left;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            /* float: right; */
+            padding: 10px 0px 0px 100px;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h2{
+            margin-left: 20px;
+        }
+
+        body {
+            font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+            background-color: #111;
+        }
+
+        .movie-poster-img {
+            width: 100%;
+            object-fit: contain;
+            max-height: 100px;
+            margin-right: 10px;
+            transition: transform 450ms;
+            max-height: 250px;
+        }
+
+        .movie-posters{
+            display: flex;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            padding: 20px;
+        }
+
+        .movie-poster-img:hover {
+            transform: scale(1.08);
+        }
+
+        .movie-posters::-webkit-scrollbar {
+            display: none;
+        }
+
+        .movie-list-row{
+            color: white;
+            margin-left: 20px;
+        }
+
+        .nav-logo{
+            width: 80px;
+            object-fit: contain;
+        }
+
+        .left-nav img{
+            margin: -27px 20px -1px 0px;
+            padding-right: 10px;
+            display: flex;
+            width: 40px;
+            float: right;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img class="nav-logo" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="" />
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">New & Popular</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="left-nav">
+            <img src="netflix-profile-pictures-1000-x-1000-88wkdmjrorckekha.jpg" alt="">
+            <img src="magnifying-glass.png" alt="">
+            <img src="google-cast-logo.png" alt="">
+        </div>
+    </div>
+
+    <div class="movie-list-row">
+        <h2>Trending</h2>
+        <div class="movie-posters">
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="" />
+            <img class="movie-poster-img" src="https://c4.wallpaperflare.com/wallpaper/449/429/294/stranger-things-netflix-poster-wallpaper-preview.jpg" alt="" />
+            <img class="movie-poster-img" src="https://e0.pxfuel.com/wallpapers/303/205/desktop-wallpaper-extraction-chris-hemsworth-netflix-action-movie-poster-revealed-netflix-movies-thumbnail.jpg" alt="" />
+            <img class="movie-poster-img" src="https://i.pinimg.com/originals/93/d3/30/93d330382e963458edb433ed100910d8.jpg" alt="" />
+            <img class="movie-poster-img" src="https://www.digitaltrends.com/wp-content/uploads/2021/10/riyinlsq2kf1awogm80jqw5dlkp.jpg" alt="" />
+            <img class="movie-poster-img" src="https://source.boomplaymusic.com/buzzgroup1/M00/32/AE/rBEevGHXumKAKqbrAAGqmG-A7hY70.jpeg" alt="" />
+            <img class="movie-poster-img" src="https://i1.netflixmovies.com/dibsl9ebc/image/upload/w_1024/ujwpvyit8xh8srg1ixjv.jpg" alt="" />
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BMzI0NmVkMjEtYmY4MS00ZDMxLTlkZmEtMzU4MDQxYTMzMjU2XkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_.jpg" alt="" />
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BZmYzMzU4NjctNDI0Mi00MGExLWI3ZDQtYzQzYThmYzc2ZmNjXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" alt="" />
+
+        </div>
+    </div>
+    <div class="movie-list-row">
+        <h2>New Releases</h2>
+        <div class="movie-posters">
+            <img class="movie-poster-img" src="https://upload.wikimedia.org/wikipedia/en/c/c3/Daily_Dose_of_Sunshine.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://resizing.flixster.com/L-WoI9RDY8FBJ9RmqGGMIf14Mkk=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vM2RlNDI3YWItNWQ4Yi00NDgzLTg5ZDAtMGQ1ZDFiODBkYzNiLmpwZw==" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BNWZhZmMwYWQtOWU1ZC00ODc1LTkzMGEtMTVjMWU5NzBjNDE4XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BNjk3OWE4NzctMmRlYi00NWViLWJhMjgtYmIyNDU3NmZiOTZlXkEyXkFqcGdeQXVyNjI4NDY5ODM@._V1_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BYmNlYzg5ODQtYTk5Zi00N2VkLThiMWMtMTY4MGUzYWVkNmVjXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BMDdlNDU1NjYtODZjYS00ODAzLWIzM2UtMGFlOTRmMGVjNmQ0XkEyXkFqcGdeQXVyMTU1MjI3MDcy._V1_FMjpg_UX1000_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/I/81zCY9g4WOL._AC_UF894,1000_QL80_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://upload.wikimedia.org/wikipedia/en/0/00/Spider-Man_No_Way_Home_poster.jpg" alt="" />
+        </div>
+    </div>
+    <div class="movie-list-row">
+        <h2>Sci-Fi & Fantasy</h2>
+        <div class="movie-posters">
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dune_%282021_film%29.jpg/220px-Dune_%282021_film%29.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_FMjpg_UX1000_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_FMjpg_UX1000_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_.jpg" alt="" />
+        </div>
+    </div>
+    <div class="movie-list-row">
+        <h2>Korean</h2>
+        <div class="movie-posters">
+            <img class="movie-poster-img" src="https://kyahaha.com/wp-content/uploads/2023/09/%E9%96%83%E4%BA%AE%E7%9A%84%E8%A5%BF%E7%93%9C22-725x1024-1.webp" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BNmVkMmI3NzQtNDI4MS00NmE2LWJlMTEtYjIxYTVmNWJlODFhXkEyXkFqcGdeQXVyMTUyMzg5NzM2._V1_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BYzY0MDJjMDgtNzJlZS00ZDhkLTlkYzAtZjYzZDljZWExYWYzXkEyXkFqcGdeQXVyNjI4NDY5ODM@._V1_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BNTlhZmIwODAtYTdiOS00MmZiLWJmMzktMzFhZWYzNjZmMzI5XkEyXkFqcGdeQXVyNjI4NDY5ODM@._V1_FMjpg_UX1000_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://preview.redd.it/ena-moon-in-the-day-main-poster-kim-young-dae-pyo-ye-jin-v0-tyssv130ngub1.jpg?width=640&crop=smart&auto=webp&s=5818214cd602419a5b369bde5779da2b3b13bc9a" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BODZmMmYzYmQtODFiOS00MzBjLThjNGItMWJkMDI0NTBlMTAyXkEyXkFqcGdeQXVyMzUwNDIxMjQ@._V1_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://upload.wikimedia.org/wikipedia/en/1/19/A_Business_Proposal.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://asianwiki.com/images/5/58/A_Good_Day_to_Be_a_Dog-mp1.jpg" alt="" />
+        </div>
+    </div>
+    <div class="movie-list-row">
+        <h2>Anime</h2>
+        <div class="movie-posters">
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BNGYyNmI3M2YtNzYzZS00OTViLTkxYjAtZDIyZmE1Y2U1ZmQ2XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BNGVkNDc3NjUtNTY5ZS00ZmE0LWE3YzctMDk2OTRlNTdiZWQwXkEyXkFqcGdeQXVyMTU3NDg0OTgx._V1_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BMDhjOTcyODctZDIwMS00N2Q1LWE2YjQtMzVmMTkwMzM0NDA4XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://miro.medium.com/v2/resize:fit:1358/0*-39YDA5ghsLXTO7X" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BZGVjOTRlYzAtNGNhZC00ZmNlLTk2MWQtZTUwNDYxNWQwNmRjXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BODI2NjdlYWItMTE1ZC00YzI2LTlhZGQtNzE3NzA4MWM0ODYzXkEyXkFqcGdeQXVyNjU1OTg4OTM@._V1_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://m.media-amazon.com/images/M/MV5BNmM4YTFmMmItMGE3Yy00MmRkLTlmZGEtMzZlOTQzYjk3MzA2XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="" />
+
+            <img class="movie-poster-img" src="https://images.justwatch.com/poster/302327189/s592/when-marnie-was-there" alt="" />
+
+        </div>
+    </div>
+</body>
+
+</html>
